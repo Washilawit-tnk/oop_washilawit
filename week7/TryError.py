@@ -7,12 +7,11 @@ try:
     elif Pice < 0 :
         raise Exception
     elif Pice >= 5000:
-        print(f"ราคาทั้งหมด{Pice}จะได้รับส่วนลด{Pice*HAN}")
+        print(f"ราคาทั้งหมด{Pice}จะได้รับส่วนลด{Pice*HAN2}")
     elif Pice >= 2000 and a <= 4999:
         print(f"ราคาทั้งหมด{Pice}จะได้รับส่วนลด{Pice*HAN1}")
     else:
         print(f"หากยอดซื้อต่ำกว่า 2000 จะไม่ได้ส่วนสด {Pice}")
-
 except ValueError:
     print('ใส่เฉพาะตัวเลข')
 except ZeroDivisionError:
